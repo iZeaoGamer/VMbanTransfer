@@ -1,6 +1,6 @@
 name: VMBanTransfer
 main: VMBanTransfer\Main
 api: [3.0.0-ALPHA11, 3.0.0-ALPHA12, 3.0.0-ALPHA13]
-version: 1.0-ALPHA
+version: 1.0-ALPHA1
 description: When you're banned, it will automatically transfer you to another server. (Good for hackers being able to hack in one server after being banned from a server.)
 author: Zeao
