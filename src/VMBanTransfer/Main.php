@@ -12,7 +12,7 @@ class Main extends PluginBase implements Listener {
 }
 
 public function onEnable() {
-    $this->getServer()->registerEvents($this, $this);
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->getLogger()->info("Plugin has been enabled succesfully. looking for errors. If there's no errors, then you're all good.");
 }
     
