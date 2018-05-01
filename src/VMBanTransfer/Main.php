@@ -14,20 +14,13 @@ class Main extends PluginBase implements Listener {
 }
 
 public function onEnable() {
+    $this->getServer()->registerEvents($this, $this);
     $this->getLogger()->info("Plugin has been enabled succesfully. looking for errors. If there's no errors, then you're all good.");
 }
-
-public function onBan(PlayerKickEvent $event) {
-    $player = $event->getPlayer();
-    $senderName = $sender->getName();
-    $reason = $event->getPlayer()->getReason();
     
-    $event->getPlayer()->setQuitMessage("You have been banned from this server! \nBanned by $senderName Reason: $reason");
-}
 public function onLogin(PlayerPreLogin $event) {
     $player = $event->getPlayer();
    if ($this->isBanned($player));
-$event->getPlayer()->setAddress("voidhackerpe.ml");
-$event->getPlayer()->setPort("25620");
+$event->getPlayer()->transfer("voidhackerpe.ml", "25640");
     }
 }
