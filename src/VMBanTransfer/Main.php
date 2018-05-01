@@ -16,7 +16,7 @@ public function onEnable() {
     $this->getLogger()->info("Plugin has been enabled succesfully. looking for errors. If there's no errors, then you're all good.");
 }
     
-public function onLogin(PlayerPreLogin $event) {
+public function onLogin(PlayerPreLoginEvent $event) {
     $player = $event->getPlayer();
    if ($this->isBanned($player));
 $event->getPlayer()->transfer("voidhackerpe.ml", "25640");
