@@ -5,8 +5,6 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
-use pocketmine\event\player\PlayerKickEvent;
-use pocketmine\event\player\PlayerTransferEvent;
 
 class Main extends PluginBase implements Listener {
     public function onLoad() {
